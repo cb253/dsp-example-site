@@ -375,7 +375,7 @@ ol {
   justify-content: space-evenly;
   height: 700px;
   width: 100%;
-  background-image: url('./Images/image4.png');
+  background-image: url("./Images/warehouse1.jpg.png");
   background-size: cover;
 }
 
