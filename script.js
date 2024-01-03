@@ -12,7 +12,7 @@ document.body.addEventListener('mouseover', function (e) {
 });
 */
 // connect tab
-document.body.addEventListener('mouseover', function (e) {
+document.addEventListener('mouseover', function (e) {
     var mouseOverTarget = e.target;
     if (mouseOverTarget === connectTab || mouseOverTarget.classList.contains('tabChild') || mouseOverTarget === connectTitle) {
       connectTab.classList.add('tabHovered')
@@ -24,7 +24,7 @@ document.body.addEventListener('mouseover', function (e) {
   });
   
   // about tab
-  document.body.addEventListener('mouseover', function (e) {
+  document.addEventListener('mouseover', function (e) {
     var mouseOverTarget = e.target;
     if (mouseOverTarget === aboutTab || mouseOverTarget.innerHTML === 'ABOUT') {
       aboutTab.classList.add('tabHovered');
@@ -33,7 +33,7 @@ document.body.addEventListener('mouseover', function (e) {
   });  
   
   // services tab
-  document.body.addEventListener('mouseover', function (e) {
+  document.addEventListener('mouseover', function (e) {
     var mouseOverTarget = e.target;
     if (mouseOverTarget === servicesTab || mouseOverTarget.innerHTML === 'SERVICES') {
       servicesTab.classList.add('tabHovered');
@@ -42,7 +42,7 @@ document.body.addEventListener('mouseover', function (e) {
   });  
   
   // reviews tab
-  document.body.addEventListener('mouseover', function (e) {
+  document.addEventListener('mouseover', function (e) {
     var mouseOverTarget = e.target;
     if (mouseOverTarget === reviewsTab || mouseOverTarget.innerHTML === 'REVIEWS') {
       reviewsTab.classList.add('tabHovered');
@@ -51,7 +51,7 @@ document.body.addEventListener('mouseover', function (e) {
   });  
   
   // partners tab
-  document.body.addEventListener('mouseover', function (e) {
+  document.addEventListener('mouseover', function (e) {
     var mouseOverTarget = e.target;
     if (mouseOverTarget === partnerTab || mouseOverTarget.innerHTML === 'PARTNERS') {
       partnerTab.classList.add('tabHovered');
@@ -62,7 +62,7 @@ document.body.addEventListener('mouseover', function (e) {
   
   
   // mouseout handler for all tabs
-  document.body.addEventListener('mouseout', function (e) {
+  document.addEventListener('mouseout', function (e) {
     var mouseOutTarget = e.target;
     if ( mouseOutTarget === aboutTab || mouseOutTarget === servicesTab || mouseOutTarget === reviewsTab || mouseOutTarget === partnerTab) {
         connectTab.classList.remove('tabHovered');
