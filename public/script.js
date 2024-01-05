@@ -13,22 +13,18 @@ document.body.addEventListener('mouseover', function (e) {
 */
 // connect tab
 document.addEventListener('mouseover', function (e) {
-    var mouseOverTarget = e.target;
-    if (mouseOverTarget === connectTab || mouseOverTarget.classList.contains('tabChild') || mouseOverTarget === connectTitle) {
-      connectTab.classList.add('tabHovered')
-  
-    } else if (mouseOverTarget !== content) {
-      connectTab.classList.remove('tabHovered')
-  
-    } 
-  });
-  
+  var mouseOverTarget = e.target;
+  if (mouseOverTarget === connectTab || mouseOverTarget.innerHTML === 'CONNECT') {
+    connectTab.classList.add('tabHovered');
+    console.log('connect hovered');
+  }
+});  
   // about tab
   document.addEventListener('mouseover', function (e) {
     var mouseOverTarget = e.target;
     if (mouseOverTarget === aboutTab || mouseOverTarget.innerHTML === 'ABOUT') {
       aboutTab.classList.add('tabHovered');
-      console.log('abouthovered');
+      console.log('about hovered');
     }
   });  
   
@@ -37,7 +33,7 @@ document.addEventListener('mouseover', function (e) {
     var mouseOverTarget = e.target;
     if (mouseOverTarget === servicesTab || mouseOverTarget.innerHTML === 'SERVICES') {
       servicesTab.classList.add('tabHovered');
-      console.log('abouthovered');
+      console.log('services hovered');
     }
   });  
   
@@ -46,7 +42,7 @@ document.addEventListener('mouseover', function (e) {
     var mouseOverTarget = e.target;
     if (mouseOverTarget === reviewsTab || mouseOverTarget.innerHTML === 'REVIEWS') {
       reviewsTab.classList.add('tabHovered');
-      console.log('abouthovered');
+      console.log('reviews hovered');
     }
   });  
   
@@ -55,7 +51,7 @@ document.addEventListener('mouseover', function (e) {
     var mouseOverTarget = e.target;
     if (mouseOverTarget === partnerTab || mouseOverTarget.innerHTML === 'PARTNERS') {
       partnerTab.classList.add('tabHovered');
-      console.log('abouthovered');
+      console.log('partners hovered');
     }
   });  
   
@@ -64,7 +60,7 @@ document.addEventListener('mouseover', function (e) {
   // mouseout handler for all tabs
   document.addEventListener('mouseout', function (e) {
     var mouseOutTarget = e.target;
-    if ( mouseOutTarget === aboutTab || mouseOutTarget === servicesTab || mouseOutTarget === reviewsTab || mouseOutTarget === partnerTab) {
+    if ( mouseOutTarget === aboutTab || mouseOutTarget === servicesTab || mouseOutTarget === reviewsTab || mouseOutTarget === partnerTab || mouseOutTarget === connectTab) {
         connectTab.classList.remove('tabHovered');
         aboutTab.classList.remove('tabHovered');
         servicesTab.classList.remove('tabHovered');

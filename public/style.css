@@ -2,6 +2,11 @@
 @import url('https://fonts.googleapis.com/css?family=Anton');
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
 
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
 
 
 button,
@@ -39,62 +44,59 @@ ol {
 }
 
 #content {
+  text-align: center;
   background-color: cornsilk;
-  display: flex;
-  flex-direction: row;
   width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .mainLogo {
   color: white;
   display: flex;
-  background-color: #6f3469;
   margin-top: 0;
   margin-bottom: 0;
   font-family: 'Anton';
   font-weight: 200;
+  font-size:x-large;
 }
-/* original
+
 #sideBar {
-  top: 0;
-  left: 0;
-  right: 0;
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  width: 200px;
-  height: 100vh;
-  background-color: #6d3a7a;
-  z-index: 100;
+
+  max-width: 300px;
+  min-width: 300px;
+  height: 100%vh;
+  background-color: #6f3469; 
+
 }
-*/
-#sideBar {
-  top: 0;
-  left: 0;
-  right: 0;
+
+#sidebarItemContainer {
   position: fixed;
-  display: static;
-  flex-direction: column;
-  width: 200px;
-  height: 100vh;
-  background-color: #6d3a7a;
-  z-index: 100;
-}
-/* original
-#mainNav {
   display: flex;
   flex-direction: column;
   height: 100%;
-  width: 100%;
+  width: 300px;
+  background: linear-gradient(180deg, #6D3A7A 0%, #B537D5 100%);
+
 }
-*/
-#mainNav {
+
+
+.sidebarItem {
   display: flex;
-  flex-direction: column;
-  height: 50%;
-  width: 100%;
   justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  color: white;
+  font-family: 'Arvo';
+  font-size: larger;
+  transition: background-color 0.3s ease-in-out;
+  border-top: solid black 1px;
+  border-right: solid black 1px;
 }
+
 
 #footerNav {
   display: flex;
@@ -111,45 +113,9 @@ ol {
   height: 50%;
 }
 
-.tabContainer {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  margin-top: 0;
-  margin-bottom: 0;
-  height: 20%;
-}
-
-.tabTitle {
-  color: white;
-  position: absolute;
-  font-family: 'Arvo';
-}
-
-.tabChildBox {
-  display: flex;
-  flex-direction: column;
-  justify-self: center;
-  margin-left: 200px;
-  align-self: flex-start;
-  width: 100%;
-  height: 100%;
-}
-
-.tabChild {
-  display: flex;
-  color: white;
-  background-color: #e967ec;
-  height: 50%;
-  width: 100%;
-  justify-content: flex-start;
-  align-items: center;
-}
-
 .tabHovered {
   background-color: #e967ec;
+  transition: background-color 0.3s ease-in-out;
   cursor: pointer;
 }
 
@@ -157,46 +123,28 @@ ol {
   display: none;
 }
 
-#bodyContent {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  width: 100%;
-  margin-left:-10px;
-}
-
-.heroContainer {
-  display: flex;
-  width: 100%;
-}
-
 .heroTextContainer {
-  display: flex;
-  flex-direction: column;
-  width: 50vw;
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.6);
-  height: 15vw;
-  border-radius: 0px 0px 20px 20px;
-  align-content: center;
-  left: 35%;
-  top: 0;
-  justify-content: space-evenly;
+  margin: auto;
+  display: block;
+  background: linear-gradient(90.69deg, #6D3A7A 60.41%, #B537D5 92.12%);
+  height: 16.7vh;
 }
+
+.heroImage {
+  width: 100%;
+}
+/* Rectangle 31 */
+
 
 .heroText {
-  font-size: 5vw;
+  text-align: center;
   font-family: 'Arvo';
   font-weight: 300;
   color: white;
   margin-top: 0px;
-  margin-bottom: 1vh;
 }
 
 .heroSubText {
-  font-size: 2.4vw;
   font-family: 'Arvo';
   font-weight: 300;
   color: white;
@@ -204,13 +152,6 @@ ol {
   margin-bottom: 0px;
 }
 
-.heroImg {
-  display: flex;
-  margin-top: -10px;
-  margin-bottom: 100px;
-  width: 100%;
-  flex-wrap: nowrap;
-}
 
 .testContent {
   font-family: 'Arvo';
