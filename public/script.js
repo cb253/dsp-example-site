@@ -77,5 +77,5 @@ document.addEventListener('mouseover', function (e) {
   
   // LINKS
   connectTab.addEventListener('click', function(event) {
-    window.location.href = 'connect.html';
+    window.location.href = "connect.html";
   });
