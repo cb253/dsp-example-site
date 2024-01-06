@@ -7,7 +7,9 @@
   box-sizing: border-box;
 }
 
-
+body{
+  display: flex;
+}
 
 button,
 input[type='submit'],
@@ -124,10 +126,9 @@ ol {
 }
 
 .heroTextContainer {
-  margin: auto;
-  display: block;
   background: linear-gradient(90.69deg, #6D3A7A 60.41%, #B537D5 92.12%);
   height: 16.7vh;
+  border-bottom: black solid 1px;
 }
 
 .heroImage {
@@ -165,8 +166,6 @@ ol {
   align-content: space-evenly;
   justify-content: center;
   height: 230px;
-  margin-left: 20%;
-  margin-top: 0px;
   margin-bottom: 60px;
   flex-wrap: wrap;
   min-width: 200px;
