@@ -54,6 +54,7 @@ ol {
   height: 100%;
   margin: 0;
   padding: 0;
+  transition: display 0.3s ease-in-out;
 }
 
 .mainLogo {
@@ -64,6 +65,10 @@ ol {
   font-family: 'Anton';
   font-weight: 200;
   font-size:small;
+}
+
+.mainLogo:hover {
+  cursor: pointer;
 }
 
 #sideBar {
@@ -373,6 +378,9 @@ background-position: 0 0, 0 0, 33px 58px, 33px 58px, 0 0, 33px 58px;
 }
 
 .globalFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   height: 16.7vh;
   width: 100%;
   background: linear-gradient(180deg, #6D3A7A 0%, #B537D4 100%);
@@ -381,8 +389,17 @@ background-position: 0 0, 0 0, 33px 58px, 33px 58px, 0 0, 33px 58px;
 }
 
 .footerPadding {
-  padding-left: 15vw;
-  padding-right: 15vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  font-family: 'Arvo';
+  font-size: 0.9vw;
+  color: cornsilk;
+}
+
+.socialButtons {
+  width: 2vw;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .row1 {
@@ -406,10 +423,98 @@ background-position: 0 0, 0 0, 33px 58px, 33px 58px, 0 0, 33px 58px;
   display: flex;
   flex-direction: row;
   width: 100%;
+  justify-content: flex-end;
 }
 
 .flexEnd {
   margin-left: auto;
+}
+
+#connectPage {
+  display: none;
+  flex-direction: column;
+  text-align: center;
+  background-color: cornsilk;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#connectPageContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-left: 15vw; 
+  margin-right: 15vw; 
+  height: 70vh;
+}
+
+.connectPageForms {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  padding-right: 5vw;
+  height: 100%;
+  align-items: center;
+}
+
+#connectPageFormButton {
+  height: 3vh; 
+  background-color: black; 
+  font-family: 'Arvo';
+  color: cornsilk;
+  padding: 5px; 
+  margin-left: 10px;
+  margin-top: 2vh;
+  width: 20%;
+}
+
+#connectPageNameInput {
+  height: 3vh;
+  margin-bottom: 20px;
+  width: 100%;
+}
+#connectPageEmailInput {
+  height: 3vh;
+  margin-bottom: 20px;
+  width: 100%;
+
+}
+#connectPageMessageInput {
+  resize: none;
+  width: 100%;
+}
+
+
+
+.connectPageAddress {
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  padding-left: 5vw;
+}
+
+.connectPageAddressStyles {
+  font-family: 'Arvo';
+  color: black;
+  font-size: 0.9vw;
+  padding-bottom: 3vh;
+  width: 100%;
+}
+
+
+.heroTextContainerConnectPage {
+  background: linear-gradient(90.69deg, #6D3A7A 60.41%, #B537D5 92.12%);
+  height: 16.8vh;
+  width: 100%;
+  border-bottom: black solid 1px;
 }
 
 /*

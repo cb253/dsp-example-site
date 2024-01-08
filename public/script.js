@@ -14,6 +14,13 @@ document.body.addEventListener('mouseover', function (e) {
 // connect tab
 document.addEventListener('mouseover', function (e) {
   var mouseOverTarget = e.target;
+  if (mouseOverTarget === mainLogo || mouseOverTarget === mainLogoSvg) {
+    mainLogo.classList.add('tabHovered');
+    console.log('logo hovered');
+  }
+});  
+document.addEventListener('mouseover', function (e) {
+  var mouseOverTarget = e.target;
   if (mouseOverTarget === connectTab || mouseOverTarget.innerHTML === 'CONNECT') {
     connectTab.classList.add('tabHovered');
     console.log('connect hovered');
@@ -60,8 +67,9 @@ document.addEventListener('mouseover', function (e) {
   // mouseout handler for all tabs
   document.addEventListener('mouseout', function (e) {
     var mouseOutTarget = e.target;
-    if ( mouseOutTarget === aboutTab || mouseOutTarget === servicesTab || mouseOutTarget === reviewsTab || mouseOutTarget === partnerTab || mouseOutTarget === connectTab) {
-        connectTab.classList.remove('tabHovered');
+    if ( mouseOutTarget === aboutTab || mouseOutTarget === servicesTab || mouseOutTarget === reviewsTab || mouseOutTarget === partnerTab || mouseOutTarget === connectTab || mouseOutTarget === mainLogo || mouseOutTarget === mainLogoSvg) {
+      mainLogo.classList.remove('tabHovered');
+      connectTab.classList.remove('tabHovered');
         aboutTab.classList.remove('tabHovered');
         servicesTab.classList.remove('tabHovered');
         reviewsTab.classList.remove('tabHovered');
@@ -72,6 +80,27 @@ document.addEventListener('mouseover', function (e) {
   
   
   // LINKS
-  connectTab.addEventListener('click', function(event) {
-    window.location.href = "connect.html";
+
+  // Onclick event handlers
+
+const mainLogoHandler = () => {
+  let pageContent = document.querySelector('#content');
+  pageContent.style.display = "flex";
+  connectPage.style.display = "none";
+  console.log("main logo")
+  window.scrollTo({
+    top: 0,
+    behavior: "auto"
   });
+}
+
+
+  const connectHandler = () => {
+    let pageContent = document.querySelector('#content');
+    pageContent.style.display = "none";
+    connectPage.style.display = "flex";
+    window.scrollTo({
+      top: 0,
+      behavior: "auto"
+    });
+  };
