@@ -1,0 +1,3 @@
+Fix the hero title sizing, doesnt adjust properly on smaller screen sizes
+fix text sizing across the board
+start media queries for mid and mobile
