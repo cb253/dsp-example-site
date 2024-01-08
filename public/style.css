@@ -66,10 +66,11 @@ ol {
   font-size:small;
 }
 
-.sideBar {
+#sideBar {
+  width: 15vw;
   display: flex;
+  flex-shrink: 0;
   flex-direction: column;
-  min-width: 300px;
   height: 100%;
   background-color: #6f3469; 
 }
@@ -79,7 +80,7 @@ ol {
   display: flex;
   flex-direction: column;
   height: 100%;
-  width: 300px;
+  width: 15vw;
   background: linear-gradient(180deg, #6D3A7A 0%, #B537D5 100%);
 
 }
@@ -91,7 +92,7 @@ ol {
   text-align: center;
   align-items: center;
   height: 100%;
-  width: 300px;
+  width: 15vw;
   color: white;
   font-family: 'Arvo';
   font-size: larger;
@@ -372,51 +373,43 @@ background-position: 0 0, 0 0, 33px 58px, 33px 58px, 0 0, 33px 58px;
 }
 
 .globalFooter {
-  display: block;
-  flex-direction: column;
-  height: 150px;
+  height: 16.7vh;
   width: 100%;
-  background-color: #6d3a7a;
-}
-
-.footerRow1 {
-  
-}
-.footerRow2 {
-
-}
-.footerRow3 {
-
-
-}
-.footerRow4 {
+  background: linear-gradient(180deg, #6D3A7A 0%, #B537D4 100%);
+  border-top: 1px solid black;
 
 }
 
-.footerEmail {
-  
+.footerPadding {
+  padding-left: 15vw;
+  padding-right: 15vw;
 }
 
-.emailInput {
-  height: 33px;
+.row1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.row2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+}
+.row3 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.row4 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
-.subscribeButton {
-
-}
-
-.footerSocials {
-
-}
-
-.socials {
-
-}
-.socialButton {
-  width: 28px;
-}
-
-.bar {
+.flexEnd {
+  margin-left: auto;
 }
 
 /*
