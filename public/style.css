@@ -541,6 +541,16 @@ background-position: 0 0, 0 0, 33px 58px, 33px 58px, 0 0, 33px 58px;
   .processBody {
     font-size: 1.2em;
   }
+  .bodyContainer2 {
+    height: 20em;
+    margin-top: 10em;
+  }
+  .storiesAndAbout {
+    height: 30em;
+  }
+  .globalFooter {
+    height: 6em;
+  }
 }
 
 
